@@ -1,7 +1,15 @@
 import styled from 'styled-components';
+import Question from './components/Question';
+import { dummy } from './questionDummy';
 
 function App() {
-  return <RootWrap></RootWrap>;
+  return (
+    <RootWrap>
+      {dummy.map((item) => (
+        <Question key={item.idx} title={item.title} questionList={item.questionList} />
+      ))}
+    </RootWrap>
+  );
 }
 
 export default App;
