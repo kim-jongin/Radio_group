@@ -25,4 +25,6 @@ const RootWrap = styled.div`
   transform: translate(-50%, 0);
 
   background-color: white;
+
+  padding: 20px;
 `;
