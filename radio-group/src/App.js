@@ -28,3 +28,5 @@ const RootWrap = styled.div`
 
   padding: 20px;
 `;
+
+/* css 추가 */
