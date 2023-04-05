@@ -8,8 +8,8 @@ export default function Question(title, questionList) {
       <div>
         {questionList.map((question, index) => (
           <RadioWrap key={index}>
-            <input type='radio' />
-            <div>{question}</div>
+            <input type='radio' value={index} checked={checkedElement === index} onChange={onChangeRadioButton} />
+            <div className='questionText'>{question}</div>
           </RadioWrap>
         ))}
       </div>
